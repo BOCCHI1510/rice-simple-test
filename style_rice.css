@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  background: #f3e5d8;
+  padding: 10rem 0;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+  background: #fef8fc;
+  border-radius: 2rem;
+}
+.pageP {
+  padding: 3rem;
+}
+
+.page .image__container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.page .img__file {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page .preparation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.preparation .prepatation__tile {
+  font-size: 6rem;
+  color: #2a2725;
+}
+.preparation .prepatation__paragraph {
+  font-size: 2.4rem;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.time {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff7fc;
+}
+.time .time__title {
+  color: #6e3b52;
+  font-size: 3.1rem;
+}
+.time .list {
+  margin-left: 2.3rem;
+}
+.list {
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.list .element {
+  font-size: 2rem;
+}
+.list .element--bold {
+  font-weight: bold;
+}
+.borderBotton {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 2rem;
+}
+.ingredients__title,
+.instruction__title,
+.nutrition_title {
+  color: #834630;
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+.nutrition .nutrition_paragraph{
+    font-size: 2rem;
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    gap: 2rem;
+}
+.table_left, .table_rigth{
+    font-size: 2.5rem;
+   font-weight: 600;
+}
+.table_left{
+    color: #918e8b;
+}
+.table_rigth{
+    color: #734338;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   gap: 4rem;
+   margin-bottom: 2rem;
+
+
+}
+tbody{
+    border-bottom: 1px solid #918e8b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 60%;
+    margin: 0 auto; 
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  .page {
+    width: 100%;
+    padding: 0;
+  }
+  .preparation .prepatation__tile {
+    font-size: 4.2rem;
+  }
+  .preparation .prepatation__paragraph {
+    font-size: 2rem;
+  }
+  .list .element--bold {
+    color: #5e5953;
+  }
+  .time .list {
+    margin-left: 2rem;
+}
+}
